@@ -1,0 +1,11 @@
+/Users/brunoneves/Desktop/personalProjects/raytracing-rust-experiment/target/debug/deps/bitflags-3fedcb1d4d141221.rmeta: /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/lib.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/iter.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/parser.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/traits.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/public.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/internal.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/external.rs
+
+/Users/brunoneves/Desktop/personalProjects/raytracing-rust-experiment/target/debug/deps/bitflags-3fedcb1d4d141221.d: /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/lib.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/iter.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/parser.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/traits.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/public.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/internal.rs /Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/external.rs
+
+/Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/lib.rs:
+/Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/iter.rs:
+/Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/parser.rs:
+/Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/traits.rs:
+/Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/public.rs:
+/Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/internal.rs:
+/Users/brunoneves/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-2.4.1/src/external.rs:

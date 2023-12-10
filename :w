@@ -1,0 +1,78 @@
+mod ray;
+
+use glam::Vec3;
+use ray::Ray;
+use std::fs::File;
+use std::io::prelude::*;
+
+fn hit_sphere(center: &Vec3, radius: f32, ray: &Ray) {
+    let oc = ray.origin() - *center;
+    let a = ray.direction().dot(ray.direction());
+    let b = 2.0 * oc.dot(ray.direction());
+    let c = oc.dot(oc) - radius * radius;
+}
+
+fn color(ray: &Ray) -> Vec3 {
+    let unit_dir = ray.direction().normalize();
+    let f = 0.5 * (unit_dir.y + 1.0);
+    return (1.0 - f)
+        * Vec3 {
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+        }
+        + f * Vec3 {
+            x: 0.5,
+            y: 0.7,
+            z: 1.0,
+        };
+}
+
+fn main() -> std::io::Result<()> {
+    let mut file = File::create("p.ppm")?;
+
+    let nx = 200;
+    let ny = 100;
+
+    let horizontal = Vec3 {
+        x: 4.0,
+        y: 0.0,
+        z: 0.0,
+    };
+    let vertical = Vec3 {
+        x: 0.0,
+        y: 2.0,
+        z: 0.0,
+    };
+    let origin = Vec3 {
+        x: 0.0,
+        y: 0.0,
+        z: 0.0,
+    };
+    let lower_left_corner = Vec3 {
+        x: -2.0,
+        y: -1.0,
+        z: -1.0,
+    };
+
+    file.write(format!("P3{}{} {}{}255{}", '\n', nx, ny, '\n', '\n').as_bytes());
+    for j in (0..ny - 1).rev() {
+        for i in 0..nx {
+            let u: f32 = (i as f32) / (nx as f32);
+            let v: f32 = (j as f32) / (ny as f32);
+            let r = Ray {
+                a: origin,
+                b: lower_left_corner + u * horizontal + v * vertical,
+            };
+            let c = color(&r);
+            let ir = (255.99 * c.x) as i64;
+            let ig = (255.99 * c.y) as i64;
+            let ib = (255.99 * c.z) as i64;
+            let s = format!("{} {} {} {}", ir, ig, ib, '\n');
+            println!("{}", s);
+            file.write_all(s.as_bytes())?;
+        }
+    }
+
+    Ok(())
+}
